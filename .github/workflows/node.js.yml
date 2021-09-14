@@ -37,7 +37,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Deploy NodeJS app
       with:
-        script: |
+        script:
           cd ~/macSwap/docs/betterjob/mastermndio/nodejs-pipelines/
           git pull
           kill %1
