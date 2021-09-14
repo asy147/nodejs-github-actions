@@ -29,15 +29,14 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+
   deploy:
     runs-on: ubuntu-latest
 
-    steps
-    - name Deploy NodeJS app
-#      uses appleboy/ssh-action@v0.1.2
-        with
-#	  host
-	script
-		cd ~/macSwap/docs/betterjob/mastermndio/nodejs-pipelines/
-		git pull
-		npm start &
+    steps:
+    - name: Deploy NodeJS app
+    with:
+        script:
+    	cd ~/macSwap/docs/betterjob/mastermndio/nodejs-pipelines/
+	git pull
+	npm start &
