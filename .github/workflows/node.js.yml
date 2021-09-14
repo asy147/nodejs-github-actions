@@ -34,10 +34,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
     - name: Deploy NodeJS app
-    with:
+      with:
         script:
-    	cd ~/macSwap/docs/betterjob/mastermndio/nodejs-pipelines/
-	git pull
-	kill %1
-	npm start &
+          cd ~/macSwap/docs/betterjob/mastermndio/nodejs-pipelines/
+          git pull
+	  kill %1
+	  npm start &
