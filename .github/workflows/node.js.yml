@@ -40,3 +40,4 @@ jobs:
         script: |
           cd ~/macSwap/docs/betterjob/mastermndio/nodejs-pipelines/
           git pull
+          node start &
