@@ -39,6 +39,7 @@ jobs:
       with:
         script: |
           cd ~/macSwap/docs/betterjob/mastermndio/nodejs-pipelines/
+	  touch whattime.txt
           git pull
           kill %1
           node start &
