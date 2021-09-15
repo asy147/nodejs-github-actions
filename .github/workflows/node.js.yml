@@ -33,7 +33,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Deploy NodeJS app
       with:
         script: |
