@@ -37,7 +37,7 @@ jobs:
     - name: Deploy NodeJS app
       uses: actions/setup-node@v1
       with:
-        script: |
+        run:
           cd ~/macSwap/docs/betterjob/mastermndio/nodejs-pipelines/
           touch whattime
           git pull
